@@ -1,0 +1,31 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Test Account 1",
+            "AccountNumber": "123000",
+            "BillingStreet": "505 Smithton St",
+            "BillingCity": "Atlanta",
+            "BillingState": "GA",
+            "BillingPostalCode": "30326",
+            "Phone": "404-333-4444"
+            
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Test Account 2",
+            "AccountNumber": "134000",
+            "BillingStreet": "123 Waterloo Way",
+            "BillingCity": "Atlanta",
+            "BillingState": "GA",
+            "BillingPostalCode": "30326",
+            "Phone": "404-555-5555"
+        }
+    ]
+}

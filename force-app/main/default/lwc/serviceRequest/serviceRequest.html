@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Service Request">
+        <div class="slds-m-around_small">
+            <!--<lightning-input type="text" name="account" label="Account" disabled value={acctName}></lightning-input>-->
+            <lightning-input type="text" name="customerName" label="Customer Name"></lightning-input>
+            <lightning-input type="phone" name="customerPhone" label="Phone" value={acctPhone}></lightning-input>
+            <lightning-textarea type="text" name="requestDetails" label="Request Details" max-length=5000></lightning-textarea>
+            <div class="slds-m-top_small">
+                <lightning-input-address
+                    name="address"
+                    address-label="Service Address"
+                    country-label="Country"
+                    street-label="Street"
+                    city-label="City"
+                    province-label="State"
+                    postal-code-label="PostalCode"
+                    street={acctStreet}
+                    city={acctCity}
+                    province={acctState}
+                    country={acctCountry}
+                    postal-code={acctPostalCode}>
+                </lightning-input-address>
+            </div>
+        
+            <div class="slds-m-top_small">
+                <lightning-button variant="brand" label="Submit" title="Submit action" onclick={createServiceRequest}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
